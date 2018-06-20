@@ -13,6 +13,7 @@
 		03598A8520BE922200541E95 /* PlaceholderAnimation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03598A8320BE922200541E95 /* PlaceholderAnimation.xcdatamodeld */; };
 		03598A8720BE922200541E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03598A8620BE922200541E95 /* Assets.xcassets */; };
 		03598A8A20BE922200541E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03598A8820BE922200541E95 /* LaunchScreen.storyboard */; };
+		036B407720D8D37100A43EFD /* DemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B407620D8D37100A43EFD /* DemoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		03598A8620BE922200541E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03598A8920BE922200541E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03598A8B20BE922200541E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		036B407620D8D37100A43EFD /* DemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,64 @@
 		03598A7B20BE922200541E95 /* PlaceholderAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				03598A7C20BE922200541E95 /* AppDelegate.swift */,
-				03598A7E20BE922200541E95 /* ViewController.swift */,
-				03598A8020BE922200541E95 /* Main.storyboard */,
-				03598A8620BE922200541E95 /* Assets.xcassets */,
-				03598A8820BE922200541E95 /* LaunchScreen.storyboard */,
-				03598A8B20BE922200541E95 /* Info.plist */,
-				03598A8320BE922200541E95 /* PlaceholderAnimation.xcdatamodeld */,
+				03598A9520BE925400541E95 /* Model */,
+				03598A9320BE924300541E95 /* Asset */,
+				03598A9220BE923900541E95 /* Storyboards */,
+				03598A9120BE922A00541E95 /* Classes */,
+				03598A9420BE924A00541E95 /* Resources */,
 			);
 			path = PlaceholderAnimation;
+			sourceTree = "<group>";
+		};
+		03598A9120BE922A00541E95 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				03598A7C20BE922200541E95 /* AppDelegate.swift */,
+				03598A7E20BE922200541E95 /* ViewController.swift */,
+				036B407620D8D37100A43EFD /* DemoVC.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		03598A9220BE923900541E95 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				03598A8020BE922200541E95 /* Main.storyboard */,
+				03598A8820BE922200541E95 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		03598A9320BE924300541E95 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				03598A8620BE922200541E95 /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		03598A9420BE924A00541E95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03598A8B20BE922200541E95 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03598A9520BE925400541E95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03598A9620BE926A00541E95 /* CoreData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03598A9620BE926A00541E95 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				03598A8320BE922200541E95 /* PlaceholderAnimation.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03598A7F20BE922200541E95 /* ViewController.swift in Sources */,
+				036B407720D8D37100A43EFD /* DemoVC.swift in Sources */,
 				03598A7D20BE922200541E95 /* AppDelegate.swift in Sources */,
 				03598A8520BE922200541E95 /* PlaceholderAnimation.xcdatamodeld in Sources */,
 			);
@@ -279,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PlaceholderAnimation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaceholderAnimation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.PlaceholderAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PlaceholderAnimation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaceholderAnimation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.PlaceholderAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
